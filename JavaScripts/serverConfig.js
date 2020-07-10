@@ -1,0 +1,1 @@
+var windowApp = window.app;

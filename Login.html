@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+</head>
+<body>
+    <form action="./index.html" method="POST">
+        <label>用户名：</label>
+        <input type="text" name="username" size="20">
+        <br><br>
+        <label>密码：</label>
+        <input type="password" name="password" size="20">
+        <br><br>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="1">男
+        <input type="radio" name="gender" value="2" checked>女
+        <br><br>
+        <label>设备：</label>
+        <input type="checkbox" value="1" checked>CT1</option>
+        <input type="checkbox" value="2">CT2</option>
+        <input type="checkbox" value="3">DR1</option>
+        <input type="checkbox" value="4">DR2</option>
+        <br><br>
+        <label>角色：</label>
+        <select name="Device" id="sel_device" multiple>
+            <option value="1">诊断医生</option>
+            <option value="2">审核医生</option>
+            <option value="3">主任</option>
+            <option value="4">科室管理员</option>
+        </select>
+        <br><br>
+        <label>授权码：</label>
+        <textarea name="LicenseCode" id="textarea_licenseCode" cols="40" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="确定">
+    </form>
+</body>
+</html>

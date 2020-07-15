@@ -1,0 +1,30 @@
+.Head{
+    width: 1900px;
+    height: 100px;
+    background-color: #000;
+    margin:auto;
+}
+.Navi{
+    width: 1900px;
+    height: 50px;
+    background-color: #00A;
+    margin:auto;
+}
+.BigImg{
+    width: 1900px;
+    height: 200px;
+    background-color: #0AA;
+    margin:auto;
+}
+.Content{
+    width: 1900px;
+    height: 400px;
+    background-color: #AA0;
+    margin:auto;
+}
+.Foot{
+    width: 1900px;
+    height: 100px;
+    background-color: #A00;
+    margin:auto;
+}

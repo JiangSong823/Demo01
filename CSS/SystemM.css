@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    height: 100%;
 }
 
 body {
@@ -77,4 +78,43 @@ body {
     font-size: 23px;
     font-weight: bold;
     border-bottom: 5px solid #05F;
+}
+.body{
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 80px;
+}
+.body>.menu_l1 {
+    width: 250px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: #333;
+}
+.body>.menu_l1>ul {
+    width: 250px;
+    border-top: 5px solid #333;
+}
+.body>.menu_l1>ul>li {
+    height: 60px;
+}
+.body>.menu_l1>ul>li>a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+.body>.menu_l1>ul>li>a:hover {
+    color: #333;
+    background-color: #EEE;
+    font-size: 23px;
+    font-weight: bold;
+    border-right: 5px solid #333;
+    border-Left: 5px solid #333;
 }

@@ -20,6 +20,14 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
+    display: flex;
+    align-items: center;
+}
+.header>.left>img {
+    height: 80%;
+    align-items: center;
+    position: relative;
+    left: 20px;
 }
 
 .header>.right {

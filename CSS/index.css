@@ -67,6 +67,22 @@ body{
     height: 90%;
     mix-blend-mode: color-burn;
 }
+.header>.search{
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.header>.search>input[type="text"] {
+    width: 300px;
+    padding: 5px 10px 5px 50px;
+    margin: auto;
+    background-image: url(../RSS/Img/search.png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    font-size: 20px;
+}
+
 .header>.right{
     height: 90%;
     position: absolute;

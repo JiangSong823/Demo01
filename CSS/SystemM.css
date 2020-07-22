@@ -21,11 +21,7 @@ body {
     top: 0px;
     display: flex;
     align-items: center;
-
-    font-size: 50px;
-    color: #048;
-    font-weight: bold;
-    font-family: 华文行楷,STXingkai;
+    /* background-color: #88F; */
     
 }
 .header>.left>img {
@@ -34,12 +30,51 @@ body {
     position: relative;
     left: 20px;
 }
+.header>.left>.cap {
+    font-size: 50px;
+    color: #048;
+    font-weight: bold;
+    font-family: 华文行楷,STXingkai;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+
+.header>.left::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .header>.right {
     width: 50%;
     height: 100%;
-    background-color: #880;
+    /* background-color: #880; */
     position: absolute;
     right: 0px;
     top: 0px;
+}
+.header>.right>.a1 {
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 20px;
+}
+.header>.right>.a1>a {
+    width: 150px;
+    height: 80px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 80px;
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+.header>.right>.a1>a:hover {
+    color: #05F;
+    font-size: 23px;
+    font-weight: bold;
+    border-bottom: 5px solid #05F;
 }

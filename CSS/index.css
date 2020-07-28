@@ -325,6 +325,9 @@ body {
     border-left: #222 2px solid;
     box-sizing: border-box;
 }
+.content>.Table .Col>li:hover {
+    border: #fff 5px solid;
+}
 
 .content>.Table .Col:nth-child(:last-child) {
     border-left: #222 0px solid;

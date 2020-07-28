@@ -329,6 +329,10 @@ body {
     border: #fff 5px solid;
 }
 
+.content>.Table .Col>li:active {
+    background-color: red;
+}
+
 .content>.Table .Col:nth-child(:last-child) {
     border-left: #222 0px solid;
 }

@@ -330,7 +330,7 @@ body {
 }
 
 .content>.Table .Col>li:active {
-    background-color: red;
+    background-color: #f80;
 }
 
 .content>.Table .Col:nth-child(:last-child) {

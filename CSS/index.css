@@ -349,5 +349,16 @@ body {
 }
 
 .footer {
-    height: 50px;
+    height: 100px;
+    line-height:50px;
+    background:#5e5e5e;
+    width:100%;
+    z-index:200;
+    text-align:center;
+}
+
+.footer p{
+    text-align:center;
+    line-height:50px;
+    color:#fbfbfb;
 }

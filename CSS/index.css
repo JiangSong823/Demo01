@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-color: navajowhite;
+body {
+    background-color: rgb(0, 68, 136);
 }
 /* 顶部导航栏 */
 .top_nav{
@@ -104,26 +104,195 @@ body{
 }
 
 .nav {
-    /* 调试属性 */
-    /* text-align: center;
-    color: #333;
-    font-size: 48px;
-    font-weight: bold; */
-
-    /* 正式属性 */
-    width: 800px;
+    width: 1200px;
     height: 50px;
     margin: auto;
-    background-color: #050;
+}
+.nav > div {
+    float: left;
+    box-sizing: border-box;
 }
 .nav>.left {
     width: 200px;
-    height: 100%;
-    background-color: #333;
+    height: inherit;
+    background-color: rgb(51, 51, 51);
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    position: relative;
+    padding-left: 50px;
 }
 .nav img {
     height: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav > .right {
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(153, 153, 153);
+    float: right;
+}
+.nav > .right > a {
+    display: block;
+    width: 20%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav > .right > a:hover {
+    background-color: rgb(255, 255, 255);
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.navImgBk {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(51, 51, 51);
+    box-sizing: border-box;
+}
+
+.navImg {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.navImg > img {
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(125, 125, 125, 0.7);
+    border-image: initial;
+}
+
+.navImg > .leftMenu {
+    width: 200px;
+    height: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(5, 5, 5, 0.7);
+    box-sizing: border-box;
+}
+
+.navImg > .leftMenu > a {
+    display: block;
+    width: inherit;
+    height: 20%;
+    text-align: center;
+    line-height: 80px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.navImg > .leftMenu > a:hover {
+    font-size: 1.5em;
+    color: rgb(24, 142, 238);
+    font-weight: 600;
+    border-left: 2px solid rgb(24, 142, 238);
+    border-right: 2px solid rgb(24, 142, 238);
+}
+
+.navImg > .notice {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(88, 88, 88, 0.7);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navImg > .notice > h3 {
+    mix-blend-mode: color-burn;
+    font-weight: 600;
+}
+
+.navImg > .notice li {
+    width: inherit;
+    height: 40px;
+    color: rgb(238, 238, 238);
+    list-style-position: inside;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.navImg > .notice a {
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+    display: inline;
+    line-height: 40px;
+    text-align: center;
+}
+
+.navImg > .notice a:hover {
+    color: rgb(24, 142, 238);
+    font-size: 20px;
+}
+
+.content {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(0, 136, 255);
+    margin: auto;
+}
+.content > .header {
+    height: 50px;
+}
+.content > .header > .title {
+    width: 300px;
+    float: left;
+    position: relative;
+}
+.content > .header > .title > img {
+    width: 30px;
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.content > .header > .title > h2 {
+    text-align: center;
+    line-height: 50px;
+}
+.content > .header > .menu {
+    height: 50px;
+    float: right;
     margin-right: 10px;
+}
+.content > .header > .menu > a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.content > .header > .menu > a:hover {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }

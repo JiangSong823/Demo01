@@ -300,51 +300,42 @@ body {
 .content>.Table {
     width: 1200px;
     height: 800px;
-}
-.content>.Table>.Row {
-    width: 1200px;
-    height: 200px;
     box-sizing: border-box;
-    display: block;
 }
 
-.content>.Table>.Row>li {
+.content>.Table>table {
     width: inherit;
     height: inherit;
-    list-style-type: none;
-    list-style-position: inside;
-    border-bottom: #222 2px solid;
     box-sizing: border-box;
 }
 
-.content>.Table .Col>li {
+.content>.Table>table tr {
+    box-sizing: border-box;
+}
+
+.content>.Table>table td {
     width: 25%;
-    height: 200px;
-    float: left;
-    display: block;
-    border-left: #222 2px solid;
+    height: 25%;
     box-sizing: border-box;
-}
-.content>.Table .Col>li:hover {
-    border: #fff 5px solid;
+    border: #000 5px solid;
 }
 
-.content>.Table .Col>li:active {
+.content>.Table>table td:hover {
+    border: #fff 5px solid;
+    box-sizing: border-box;
+}
+
+.content>.Table>table td:active {
     background-color: #f80;
 }
 
-.content>.Table .Col:nth-child(:last-child) {
-    border-left: #222 0px solid;
-}
-
-.content>.Table .Col>li>a {
+.content>.Table>table td>a {
     display: block;
     text-decoration: none;
     text-align: center;
     color: #FFF;
     font-size: 20px;
     font-weight: 500;
-    line-height: 200px;
     box-sizing: border-box;
 }
 

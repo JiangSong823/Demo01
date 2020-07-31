@@ -79,6 +79,13 @@ body {
     opacity: 0.4;
 }
 
+/* 二维码 */
+.header>.left>.QRCode {
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
 /* 标题栏搜索区域 */
 .header>.search{
     height: 100%;

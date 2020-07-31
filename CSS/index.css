@@ -70,21 +70,33 @@ body {
     left: 10%;
 }
 /* 标题栏左侧图片 */
-.header>.left>img {
-    height: 90%;
+.header>.left>img:first-child {
+    height: 100%;
     mix-blend-mode: color-burn;
     opacity: 0.6;
 }
 
-.header img:hover {
+.header>.left>img:first-child:hover {
     opacity: 1;
+}
+.header>.left>img:first-child:hover+img {
+    display: block;
 }
 
 /* 二维码 */
 .header>.left>img:last-child {
-    position: absolute;
-    top: 60px;
-    left: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -4px;
+    left: 20px;
+    background-color: #FFF;
+    display: none;
+    z-index: 100;
+}
+
+.header>.left>img:last-child:hover {
+    display: block;
 }
 
 /* 标题栏搜索区域 */

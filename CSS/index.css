@@ -73,16 +73,17 @@ body {
 .header>.left>img {
     height: 90%;
     mix-blend-mode: color-burn;
+    opacity: 0.6;
 }
 
 .header img:hover {
-    opacity: 0.4;
+    opacity: 1;
 }
 
 /* 二维码 */
-.header>.left>.QRCode {
-    position: relative;
-    top: 5px;
+.header>.left>img:last-child {
+    position: absolute;
+    top: 60px;
     left: 50px;
 }
 

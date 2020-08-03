@@ -13,10 +13,18 @@
     height: 80px;
     float: left;
 }
+
+.header>.logo {
+    box-sizing: border-box;
+}
+
 .header>.logo>img {
     height: 50px;
     margin-top: 15px;
     margin-left: 15px;
+    
+    border-radius: 50%;
+    border: 1px #FFF solid;
 }
 
 .header>.mod {
@@ -38,10 +46,12 @@
 }
 
 .header>.mod>.menu:hover {
-    background-color: #FFF;
+    background-color: #888;
 }
 
 .header>.mod>.menu:hover>label {
+    font-size: 3em;
+    font-weight: 500;
     color: #333;
 }
 
@@ -60,6 +70,7 @@
     left: 0px;
     top: 80px;
     display: none;
+    z-index: 2;
 }
 
 .header>.mod>.menu>.cont>.center {
@@ -71,20 +82,37 @@
 
 .header>.mod>.menu>.cont>.center>.img {
     width: 20%;
+    height: 240px;
     box-sizing: border-box;
     float: left;
     position: relative;
+    top: 30px;
+    left: 0px;
+}
+
+.header>.mod>.menu>.cont>.center>.img>.border {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 50px rgba(255, 255, 255, 0.5) solid;
+    z-index: 3;
 }
 
 .header>.mod>.menu>.cont>.center>.img>img {
     width: 200px;
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 20px;
     box-sizing: border-box;
+    z-index: 2;
 }
 
-.header>.mod>.menu>.cont>.center>.img>img:hover {
+.header>.mod>.menu>.cont>.center>.img>img:hover
+,.header>.mod>.menu>.cont>.center>.img>.border:hover {
     border: #FFF 1px solid;
     border-radius: 20px;
     box-shadow: 0px 3px 2px 2px rgba(0, 0, 0, 0.5);
@@ -95,4 +123,17 @@
     height: 600px;
     background-color: #258;
     margin: auto;
+}
+
+.nav>.huan {
+    width: 500px;
+    height: 500px;
+    background-color: #FFF;
+    border: #28E 150px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    left: auto;
 }

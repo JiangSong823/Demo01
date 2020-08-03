@@ -137,3 +137,107 @@
     top: 50px;
     left: auto;
 }
+
+.space {
+    width: 100%;
+    height: 20px;
+}
+
+/* 优惠券 */
+.benefits {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+.benefits>.bf {
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.benefits>.bf>.left {
+    width: 100px;
+    height: 100px;
+    background-color: #28e;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.benefits>.bf>.left>span {
+    color: #FFF;
+}
+.benefits>.bf>.left>span:first-child {
+    font-size: 30px;
+}
+.benefits>.bf>.left>span:last-child {
+    font-size: 10px;
+}
+
+.benefits>.bf>.right {
+    width: 300px;
+    height: 100px;
+    float: right;
+    background-color: #DDD;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.benefits>.bf>.right>.cont {
+    width: 400px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.benefits>.bf>.right>.cont>.condition {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+
+.benefits>.bf>.right>.cont>.vdate {
+    font-size: 12px;
+    color: #555;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.benefits>.bf>.right>.href {
+    width: 80px;
+    height: 100px;
+    float: right;
+    position: relative;
+    right: 0px;
+    top: -85px;
+    color: #258;
+}
+
+.benefits>.bf::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+
+    position: relative;
+    top: 10px;
+    left: 90px;
+}
+
+.benefits>.bf::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+
+    position: relative;
+    top: 90px;
+    left: 90px;
+}

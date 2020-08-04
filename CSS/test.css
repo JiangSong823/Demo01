@@ -125,17 +125,39 @@
     margin: auto;
 }
 
-.nav>.huan {
+.nav>.circle {
     width: 500px;
     height: 500px;
     background-color: #FFF;
-    border: #28E 150px solid;
+    border: #28E 120px solid;
     box-sizing: border-box;
     border-radius: 50%;
     margin: auto;
     position: relative;
     top: 50px;
     left: auto;
+}
+
+.nav>.circle>.Ellipse {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%/50%;
+    position: relative;
+    top: -20px;
+    left: -120px;
+}
+
+.nav>.circle>.Ellipse>.backcircle {
+    width: 260px;
+    height: 260px;
+    background-color: #000;
+    position: relative;
+    top: 20px;
+    left: 120px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: #f00 100px solid;
 }
 
 .space {

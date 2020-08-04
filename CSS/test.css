@@ -5,7 +5,7 @@
 .header {
     width: 1200px;
     height: 80px;
-    background-color: #333;
+    background-image: radial-gradient(circle at left, #888,#333);
     margin: auto;
 }
 
@@ -123,32 +123,20 @@
     height: 600px;
     background-color: #258;
     margin: auto;
+    background-image: linear-gradient(#258,#333);
 }
 
-.nav>.circle {
-    width: 500px;
-    height: 500px;
-    background-color: #FFF;
-    border: #28E 120px solid;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin: auto;
-    position: relative;
-    top: 50px;
-    left: auto;
-}
-
-.nav>.circle>.Ellipse {
+.nav>.Ellipse {
     width: 500px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%/50%;
     position: relative;
-    top: -20px;
-    left: -120px;
+    top: 150px;
+    left: 350px;
 }
 
-.nav>.circle>.Ellipse>.back {
+.nav>.Ellipse>.back {
     width: 260px;
     height: 260px;
     background-color: #F00;
@@ -162,14 +150,14 @@
     left: 120px;
 }
 
-.nav>.circle>.Ellipse>.back>div {
+.nav>.Ellipse>.back>div {
     width: 40px;
     height: 80px;
     /* background-color: #F00; */
     border-radius: 40px;
 }
 
-.nav>.circle>.Ellipse>.back>.center {
+.nav>.Ellipse>.back>.center {
     width: 60px;
     height: 60px;
     background-image: radial-gradient(#333,#000);
@@ -180,7 +168,7 @@
     left: 100px;
 }
 
-.nav>.circle>.Ellipse>.back>div>.bottomblack {
+.nav>.Ellipse>.back>div>.bottomblack {
     width: 40px;
     height: 40px;
     background-color: #000;
@@ -190,7 +178,7 @@
     left: 0px;
 }
 
-.nav>.circle>.Ellipse>.back>div>.middleblack {
+.nav>.Ellipse>.back>div>.middleblack {
     width: 20px;
     height: 40px;
     background-color: #000;
@@ -199,7 +187,7 @@
     left: 20px;
 }
 
-.nav>.circle>.Ellipse>.back>div>.topRed {
+.nav>.Ellipse>.back>div>.topRed {
     width: 40px;
     height: 40px;
     background-image: linear-gradient(45deg,#600000,#400000);
@@ -214,21 +202,21 @@
     height: 20px;
 }
 
-.nav>.circle>.Ellipse>.back>div:nth-child(2) {
+.nav>.Ellipse>.back>div:nth-child(2) {
     position: absolute;
     top: -10px;
     left: 100px;
     transform:rotate(-80deg);
 }
 
-.nav>.circle>.Ellipse>.back>div:nth-child(3) {
+.nav>.Ellipse>.back>div:nth-child(3) {
     position: absolute;
     top: 150px;
     left: 30px;
     transform:rotate(160deg);
 }
 
-.nav>.circle>.Ellipse>.back>div:nth-child(4) {
+.nav>.Ellipse>.back>div:nth-child(4) {
     position: absolute;
     top: 140px;
     left: 200px;
@@ -236,7 +224,7 @@
 }
 
 
-.nav>.circle>.Ellipse>.back>.line {
+.nav>.Ellipse>.back>.line {
     width: 200px;
     height: 200px;
     background-color: rgba(255, 0, 0, 0.0);

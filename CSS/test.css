@@ -160,6 +160,60 @@
     border: #f00 100px solid;
 }
 
+.nav>.circle>.Ellipse>.backcircle>div {
+    width: 50px;
+    height: 100px;
+    background-color: #F00;
+    border-radius: 50%/20%;
+}
+.nav>.circle>.Ellipse>.backcircle>.top {
+    position: absolute;
+    top: -100px;
+    left: 5px;
+}
+
+.nav>.circle>.Ellipse>.backcircle>.left {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+.nav>.circle>.Ellipse>.backcircle>.right {
+    position: absolute;
+    top: 30px;
+    left:-50px;
+}
+
+.nav>.circle>.Ellipse>.backcircle>div>.bottomblack {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 30px;
+    left: 0px;
+}
+
+.nav>.circle>.Ellipse>.backcircle>div>.middleblack {
+    width: 20px;
+    height: 40px;
+    background-color: #000;
+    position: relative;
+    top: -30px;
+    left: 20px;
+}
+
+.nav>.circle>.Ellipse>.backcircle>div>.topRed {
+    width: 30px;
+    height: 29px;
+    background-color: #F00;
+    border-radius: 30% 60% 100% 0;
+    position: relative;
+    top: -80px;
+    left: 10px;
+}
+
 .space {
     width: 100%;
     height: 20px;

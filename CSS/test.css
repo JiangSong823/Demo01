@@ -148,28 +148,37 @@
     left: -120px;
 }
 
-.nav>.circle>.Ellipse>.backcircle {
+.nav>.circle>.Ellipse>.back {
     width: 260px;
     height: 260px;
-    background-color: #000;
+    background-color: #F00;
 
     border-radius: 50%;
     box-sizing: border-box;
-    border: #f00 100px solid;
-    
     position: relative;
     top: 20px;
     left: 120px;
 }
 
-.nav>.circle>.Ellipse>.backcircle>div {
+.nav>.circle>.Ellipse>.back>div {
     width: 40px;
     height: 80px;
     background-color: #F00;
     border-radius: 40px;
 }
 
-.nav>.circle>.Ellipse>.backcircle>div>.bottomblack {
+.nav>.circle>.Ellipse>.back>.center {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.nav>.circle>.Ellipse>.back>div>.bottomblack {
     width: 40px;
     height: 40px;
     background-color: #000;
@@ -179,7 +188,7 @@
     left: 0px;
 }
 
-.nav>.circle>.Ellipse>.backcircle>div>.middleblack {
+.nav>.circle>.Ellipse>.back>div>.middleblack {
     width: 20px;
     height: 40px;
     background-color: #000;
@@ -188,7 +197,7 @@
     left: 20px;
 }
 
-.nav>.circle>.Ellipse>.backcircle>div>.topRed {
+.nav>.circle>.Ellipse>.back>div>.topRed {
     width: 40px;
     height: 40px;
     background-color: #F00;
@@ -203,36 +212,36 @@
     height: 20px;
 }
 
-.nav>.circle>.Ellipse>.backcircle>.comma:nth-child(1) {
-    position: relative;
-    top: -100px;
-    left: 5px;
-    transform:rotate(-100deg);
+.nav>.circle>.Ellipse>.back>div:nth-child(2) {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    transform:rotate(-80deg);
 }
 
-.nav>.circle>.Ellipse>.backcircle>.comma:nth-child(2) {
-    position: relative;
-    top: -50px;
-    left: -70px;
-    transform:rotate(150deg);
+.nav>.circle>.Ellipse>.back>div:nth-child(3) {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    transform:rotate(160deg);
 }
 
-.nav>.circle>.Ellipse>.backcircle>.comma:nth-child(3) {
-    position: relative;
-    top: -110px;
-    left: 80px;
+.nav>.circle>.Ellipse>.back>div:nth-child(4) {
+    position: absolute;
+    top: 140px;
+    left: 200px;
     transform:rotate(40deg);
 }
 
-.nav>.circle>.Ellipse>.backcircle>.line {
+.nav>.circle>.Ellipse>.back>.line {
     width: 200px;
     height: 200px;
     background-color: rgba(255, 0, 0, 0.0);
     border:#000 2px solid ;
     border-radius: 50%;
-    position: relative;
-    top: -310px;
-    left: -70px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 /* 优惠券 */

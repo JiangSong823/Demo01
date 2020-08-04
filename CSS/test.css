@@ -153,6 +153,8 @@
     height: 260px;
     background-color: #F00;
 
+    background-image: radial-gradient(#F00,#500000,#000);
+
     border-radius: 50%;
     box-sizing: border-box;
     position: relative;
@@ -163,7 +165,7 @@
 .nav>.circle>.Ellipse>.back>div {
     width: 40px;
     height: 80px;
-    background-color: #F00;
+    /* background-color: #F00; */
     border-radius: 40px;
 }
 
@@ -200,7 +202,7 @@
 .nav>.circle>.Ellipse>.back>div>.topRed {
     width: 40px;
     height: 40px;
-    background-color: #F00;
+    background-image: linear-gradient(45deg,#5B0000,#300000);
     border-radius: 50%;
     position: relative;
     top: -80px;
@@ -232,6 +234,7 @@
     left: 200px;
     transform:rotate(40deg);
 }
+
 
 .nav>.circle>.Ellipse>.back>.line {
     width: 200px;

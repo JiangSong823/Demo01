@@ -5,7 +5,7 @@
 .header {
     width: 1200px;
     height: 80px;
-    background-image: radial-gradient(circle at left, #888,#333);
+    background-image: radial-gradient(circle at left center, #888,#333);
     margin: auto;
 }
 
@@ -127,14 +127,14 @@
 }
 
 .nav>.Ellipse {
-    width: 500px;
+    width: 800px;
     height: 260px;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 60%/60%;
-    position: relative;
-    top: 150px;
-    left: 350px;
     box-shadow: inset 5px 5px 100px 20px #FFF;
+    
+    position: relative;
+    top: 170px;
+    left: 200px;
 }
 
 .nav>.Ellipse>.back {
@@ -148,8 +148,19 @@
     box-sizing: border-box;
     position: relative;
     top: 0px;
-    left: 120px;
+    left: 270px;
 }
+
+.nav>.Ellipse>.back:hover {
+    transform: rotate(50deg) scale(1.2,1.2);
+}
+
+/* TODO:动画特效 */
+/* @-webkit-keyframes .nav>.Ellipse>.back:hover
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(50deg);}
+} */
 
 .nav>.Ellipse>.back>div {
     width: 40px;
@@ -167,6 +178,11 @@
     position: relative;
     top: 100px;
     left: 100px;
+}
+
+.nav>.Ellipse>.back>.center:hover {
+    background-image: radial-gradient(#FFF,#000);
+    transform: scale(1.2,1.2);
 }
 
 .nav>.Ellipse>.back>div>.bottomblack {
@@ -203,27 +219,26 @@
     height: 20px;
 }
 
-.nav>.Ellipse>.back>div:nth-child(2) {
+.nav>.Ellipse>.back>div:nth-child(1) {
     position: absolute;
     top: -10px;
     left: 100px;
     transform:rotate(-80deg);
 }
 
-.nav>.Ellipse>.back>div:nth-child(3) {
+.nav>.Ellipse>.back>div:nth-child(2) {
     position: absolute;
     top: 150px;
     left: 30px;
     transform:rotate(160deg);
 }
 
-.nav>.Ellipse>.back>div:nth-child(4) {
+.nav>.Ellipse>.back>div:nth-child(3) {
     position: absolute;
     top: 140px;
     left: 200px;
     transform:rotate(40deg);
 }
-
 
 .nav>.Ellipse>.back>.line {
     width: 200px;
@@ -239,15 +254,45 @@
 /* 优惠券 */
 .benefits {
     width: 1200px;
-    height: 300px;
+    height: 400px;
     position: relative;
     margin: auto;
+    background-color: #258;
+
+    display: none;
 }
+
+.bfmenu {
+    width: 1200px;
+    height: 50px;
+    background-color: #333;
+
+    color: #FFF;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.bfmenu:active + .benefits{
+    display: block;
+}
+
+.benefits:hover{
+    display: block;
+}
+
 .benefits>.bf {
     width: 400px;
     height: 100px;
     box-sizing: border-box;
 }
+
+.benefits>.bf:hover {
+    transform:translate(2px,-5px);
+    box-shadow: 10px 30px 10px 5px rgba(51,51,51,0.8);
+}
+
 .benefits>.bf>.left {
     width: 100px;
     height: 100px;
@@ -314,7 +359,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #258;
     border-radius: 50%;
 
     position: relative;
@@ -327,10 +372,30 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-color: #FFF;
+    background-color: #258;
     border-radius: 50%;
 
     position: relative;
     top: 90px;
     left: 90px;
+    transform: ;
+}
+
+.footer {
+    width: 1200px;
+    height: 500px;
+    background-image: radial-gradient(ellipse at center center,#333,#FFF);
+    margin: auto;
+    color: #28E;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 200px;
+    text-align: center;
+}
+
+.footer>.mtr {
+    width: 300px;
+    height: 200px;
+    background-color: #258;
+    transform: matrix(0.5,-0.2,0.8,0.5,450,150);
 }

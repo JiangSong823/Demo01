@@ -152,8 +152,16 @@
 }
 
 .nav>.Ellipse>.back:hover {
-    transform: rotate(3600deg) scale(1.2,1.2);
-    transition: all 2s ease-out 0s;
+    animation: XLY 1500ms ease 0s 1 normal;
+}
+
+@keyframes XLY{
+    0% {
+        transform: rotate(1200deg);
+    }
+    60% {
+        transform: rotate(800deg) scale(1.2,1.2);
+    }
 }
 
 .nav>.Ellipse>.back>div {
